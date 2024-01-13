@@ -1,4 +1,5 @@
 # web_server/app.py
+import os
 from flask import Flask, render_template, request
 from ai_translator.main import translate_pdf # Update the import path based on your project structure
 
@@ -11,30 +12,28 @@ def index():
         if 'file' not in request.files:
             return render_template('index.html', message='No file part')
 
+        model_type = request.form.get('model_type') or 'OpenAIModel'
+        openai_api_key = request.form.get('openai_api_key') or os.environ.get('OPENAI_API_KEY')
+
+        file_format = request.form.get('file_format')
+        if file_format != 'pdf':
+            return render_template('index.html', message='Now we only support pdf format')
+
+        openai_model = request.form.get('openai_model') or 'gpt-3.5-turbo'
+        target_language = request.form.get('target_language') or "中文"
+        output_file_path = request.form.get('output_file_path')
+        if not output_file_path:
+            return render_template('index.html', message='please enter output file path!')
+
+        pages = int(request.form.get("pages")) or 1
+
         file = request.files['file']
 
         if file.filename == '':
             return render_template('index.html', message='No selected file')
 
-        model_type = request.form.get('model_type') or 'OpenAIModel'
-        openai_api_key = request.form.get('openai_api_key')
-        file_format = request.form.get('file_format')
-        book = request.form.get('book')
-        openai_model = request.form.get('openai_model') or 'gpt-3.5-turbo'
-        target_language = request.form.get('target_language') or "中文"
-        output_file_path = request.form.get('output_file_path')
-        pages = request.form.get("pages")
-
-        # model_type = 'OpenAIModel'  # Set your default or configurable model type
-        # openai_api_key = 'your_default_key'  # Set your default or configurable API key
-        # file_format = 'pdf'  # Set your default or configurable file format
-        # book = file  # Assuming the uploaded file is the book
-        # openai_model = 'gpt-3.5-turbo'  # Set your default or configurable OpenAI model
-        # target_language = "中文"
-        # output_file_path = "/Users/hao.li/Downloads"
-        # pages = 1
         try:
-            output_file = translate_pdf(model_type, openai_api_key, file_format, book, openai_model, target_language, output_file_path, pages)
+            output_file = translate_pdf(model_type, openai_api_key, file_format, file, openai_model, target_language, output_file_path, pages)
             return render_template('index.html', message=f'File {output_file} uploaded and translated successfully')
         except Exception as e:
             return render_template('index.html', message=f'Error: {str(e)}')

@@ -16,15 +16,16 @@
             </div>
         {% endif %}
         <div class="row">
-            <!-- Settings form -->
-            <form class="col s12" method="post">
+
+            <!-- File upload form -->
+            <form class="col s12" method="post" enctype="multipart/form-data">
                 <div class="row">
                     <div class="input-field col s6">
                         <input id="model_type" type="text" class="validate" name="model_type" value="OpenAIModel">
                         <label for="model_type">Model Type</label>
                     </div>
                     <div class="input-field col s6">
-                        <input id="openai_api_key" type="text" class="validate" name="openai_api_key" value="your_default_key">
+                        <input id="openai_api_key" type="text" class="validate" name="openai_api_key" value="">
                         <label for="openai_api_key">OpenAI API Key</label>
                     </div>
                     <div class="input-field col s6">
@@ -44,7 +45,7 @@
                         <label for="target_language">Target Language</label>
                     </div>
                     <div class="input-field col s6">
-                        <input id="output_file_path" type="text" class="validate" name="output_file_path" value="Your target file path">
+                        <input id="output_file_path" type="text" class="validate" name="output_file_path" value="">
                         <label for="output_file_path">Output File Path</label>
                     </div>
                     <div class="input-field col s6">
@@ -53,10 +54,6 @@
                     </div>
                     <!-- Add more input fields for other parameters -->
                 </div>
-            </form>
-
-            <!-- File upload form -->
-            <form class="col s12" method="post" enctype="multipart/form-data">
                 <div class="file-field input-field">
                     <div class="btn teal">
                         <span>Choose File</span>
