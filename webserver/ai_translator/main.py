@@ -37,8 +37,7 @@ def translate_pdf(model_type, openai_api_key, file_format, book, openai_model, t
         # Handle exceptions and log or raise accordingly
         print(f"An error occurred: {str(e)}")
         # You can raise the exception again if you want it to propagate to the caller
-        # raise
-        return False  # Return False to indicate failure
+        raise
 
 
 if __name__ == "__main__":
