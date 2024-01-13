@@ -34,6 +34,8 @@ def index():
 
         try:
             output_file = translate_pdf(model_type, openai_api_key, file_format, file, openai_model, target_language, output_file_path, pages)
+            if not output_file:
+                return render_template('index.html', message='Can not translate your files')
             return render_template('index.html', message=f'File {output_file} uploaded and translated successfully')
         except Exception as e:
             return render_template('index.html', message=f'Error: {str(e)}')
