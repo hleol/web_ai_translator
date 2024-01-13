@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload your file for translation</title>
+    <!-- Include Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align teal-text">Upload your file for translation</h1>
+        {% if message %}
+            <div class="card-panel teal lighten-2 white-text">
+                <p>{{ message }}</p>
+            </div>
+        {% endif %}
+        <div class="row">
+            <form class="col s12" method="post" enctype="multipart/form-data">
+                <div class="file-field input-field">
+                    <div class="btn teal">
+                        <span>Choose File</span>
+                        <input type="file" name="file" accept=".pdf" required>
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Upload a PDF file">
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light teal" type="submit">Translate
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Include Materialize JavaScript and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Initialize Materialize components -->
+    <script>
+        $(document).ready(function(){
+            M.AutoInit();
+        });
+    </script>
+</body>
+</html>
+

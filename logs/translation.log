@@ -1,0 +1,192 @@
+2024-01-13 19:18:39.246 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ 操作指南 邮寄地址
+1.打印本PDF文件 阿虹
+2.将本文件放入鞋盒中，如无鞋盒请连同球鞋 +86 159 1413 8839
+及本文件放入一个袋子中
+广东省深圳市龙岗区平湖街道富民工业区芳坑
+3.将鞋盒加固后寄往指定的地址 路31号优雅工业园D栋一楼
+深圳市
+请于2024-01-10前寄出。延期将自动取消
+订单，多次取消订单将重新审核卖家账号。 广东省
+Username: leohli
+Order #713142256
+Name: Gel 1130 'White Shark Skin'
+SKU: 1201A256 116
+Size: 7
+Tracking Code: c2521d8ae79c0f7d
+PON-713142256
+✂请沿虚线剪下，用透明胶带将虚线下方文字及条
+码朝外贴在外箱表面，不要遮挡文字及条码信息
+请勿覆盖
+Order #713142256
+SKU: 1201A256 116
+Size: 7
+Tracking Code: c2521d8ae79c0f7d
+2024-01-13 19:18:39.285 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ 操作指南 邮寄地址
+1.打印本PDF文件 阿虹
+2.将本文件放入鞋盒中，如无鞋盒请连同球鞋 +86 159 1413 8839
+及本文件放入一个袋子中
+广东省深圳市龙岗区平湖街道富民工业区芳坑
+3.将鞋盒加固后寄往指定的地址 路31号优雅工业园D栋一楼
+深圳市
+请于2024-01-10前寄出。延期将自动取消
+订单，多次取消订单将重新审核卖家账号。 广东省
+Username: leohli
+Order #645351000
+Name: 997H 'Grey'
+SKU: CM997HCAD
+Size: 9
+Tracking Code: ad5d5d9b74391903
+PON-645351000
+✂请沿虚线剪下，用透明胶带将虚线下方文字及条
+码朝外贴在外箱表面，不要遮挡文字及条码信息
+请勿覆盖
+Order #645351000
+SKU: CM997HCAD
+Size: 9
+Tracking Code: ad5d5d9b74391903
+2024-01-13 19:18:39.294 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ 操作指南 邮寄地址
+1.打印本PDF文件 阿虹
+2.将本文件放入鞋盒中，如无鞋盒请连同球鞋 +86 159 1413 8839
+及本文件放入一个袋子中
+广东省深圳市龙岗区平湖街道富民工业区芳坑
+3.将鞋盒加固后寄往指定的地址 路31号优雅工业园D栋一楼
+深圳市
+请于2024-01-12前寄出。延期将自动取消
+订单，多次取消订单将重新审核卖家账号。 广东省
+Username: leohli
+Order #420019050
+Name: Gel 1130 'White Shark Skin'
+SKU: 1201A256 116
+Size: 5.5
+Tracking Code: eaee99b1b7eec9d8
+PON-420019050
+✂请沿虚线剪下，用透明胶带将虚线下方文字及条
+码朝外贴在外箱表面，不要遮挡文字及条码信息
+请勿覆盖
+Order #420019050
+SKU: 1201A256 116
+Size: 5.5
+Tracking Code: eaee99b1b7eec9d8
+2024-01-13 19:18:39.294 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：操作指南 邮寄地址
+1.打印本PDF文件 阿虹
+2.将本文件放入鞋盒中，如无鞋盒请连同球鞋 +86 159 1413 8839
+及本文件放入一个袋子中
+广东省深圳市龙岗区平湖街道富民工业区芳坑
+3.将鞋盒加固后寄往指定的地址 路31号优雅工业园D栋一楼
+深圳市
+请于2024-01-10前寄出。延期将自动取消
+订单，多次取消订单将重新审核卖家账号。 广东省
+Username: leohli
+Order #713142256
+Name: Gel 1130 'White Shark Skin'
+SKU: 1201A256 116
+Size: 7
+Tracking Code: c2521d8ae79c0f7d
+PON-713142256
+✂请沿虚线剪下，用透明胶带将虚线下方文字及条
+码朝外贴在外箱表面，不要遮挡文字及条码信息
+请勿覆盖
+Order #713142256
+SKU: 1201A256 116
+Size: 7
+Tracking Code: c2521d8ae79c0f7d
+2024-01-13 19:18:45.526 | WARNING  | model.openai_model:make_request:41 - Rate limit reached. Waiting for 60 seconds before retrying.
+2024-01-13 19:21:10.201 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ 操作指南 邮寄地址
+1.打印本PDF文件 阿虹
+2.将本文件放入鞋盒中，如无鞋盒请连同球鞋 +86 159 1413 8839
+及本文件放入一个袋子中
+广东省深圳市龙岗区平湖街道富民工业区芳坑
+3.将鞋盒加固后寄往指定的地址 路31号优雅工业园D栋一楼
+深圳市
+请于2024-01-10前寄出。延期将自动取消
+订单，多次取消订单将重新审核卖家账号。 广东省
+Username: leohli
+Order #713142256
+Name: Gel 1130 'White Shark Skin'
+SKU: 1201A256 116
+Size: 7
+Tracking Code: c2521d8ae79c0f7d
+PON-713142256
+✂请沿虚线剪下，用透明胶带将虚线下方文字及条
+码朝外贴在外箱表面，不要遮挡文字及条码信息
+请勿覆盖
+Order #713142256
+SKU: 1201A256 116
+Size: 7
+Tracking Code: c2521d8ae79c0f7d
+2024-01-13 19:21:10.240 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ 操作指南 邮寄地址
+1.打印本PDF文件 阿虹
+2.将本文件放入鞋盒中，如无鞋盒请连同球鞋 +86 159 1413 8839
+及本文件放入一个袋子中
+广东省深圳市龙岗区平湖街道富民工业区芳坑
+3.将鞋盒加固后寄往指定的地址 路31号优雅工业园D栋一楼
+深圳市
+请于2024-01-10前寄出。延期将自动取消
+订单，多次取消订单将重新审核卖家账号。 广东省
+Username: leohli
+Order #645351000
+Name: 997H 'Grey'
+SKU: CM997HCAD
+Size: 9
+Tracking Code: ad5d5d9b74391903
+PON-645351000
+✂请沿虚线剪下，用透明胶带将虚线下方文字及条
+码朝外贴在外箱表面，不要遮挡文字及条码信息
+请勿覆盖
+Order #645351000
+SKU: CM997HCAD
+Size: 9
+Tracking Code: ad5d5d9b74391903
+2024-01-13 19:21:10.248 | DEBUG    | translator.pdf_parser:parse_pdf:46 - [raw_text]
+ 操作指南 邮寄地址
+1.打印本PDF文件 阿虹
+2.将本文件放入鞋盒中，如无鞋盒请连同球鞋 +86 159 1413 8839
+及本文件放入一个袋子中
+广东省深圳市龙岗区平湖街道富民工业区芳坑
+3.将鞋盒加固后寄往指定的地址 路31号优雅工业园D栋一楼
+深圳市
+请于2024-01-12前寄出。延期将自动取消
+订单，多次取消订单将重新审核卖家账号。 广东省
+Username: leohli
+Order #420019050
+Name: Gel 1130 'White Shark Skin'
+SKU: 1201A256 116
+Size: 5.5
+Tracking Code: eaee99b1b7eec9d8
+PON-420019050
+✂请沿虚线剪下，用透明胶带将虚线下方文字及条
+码朝外贴在外箱表面，不要遮挡文字及条码信息
+请勿覆盖
+Order #420019050
+SKU: 1201A256 116
+Size: 5.5
+Tracking Code: eaee99b1b7eec9d8
+2024-01-13 19:21:10.248 | DEBUG    | translator.pdf_translator:translate_pdf:19 - 翻译为中文：操作指南 邮寄地址
+1.打印本PDF文件 阿虹
+2.将本文件放入鞋盒中，如无鞋盒请连同球鞋 +86 159 1413 8839
+及本文件放入一个袋子中
+广东省深圳市龙岗区平湖街道富民工业区芳坑
+3.将鞋盒加固后寄往指定的地址 路31号优雅工业园D栋一楼
+深圳市
+请于2024-01-10前寄出。延期将自动取消
+订单，多次取消订单将重新审核卖家账号。 广东省
+Username: leohli
+Order #713142256
+Name: Gel 1130 'White Shark Skin'
+SKU: 1201A256 116
+Size: 7
+Tracking Code: c2521d8ae79c0f7d
+PON-713142256
+✂请沿虚线剪下，用透明胶带将虚线下方文字及条
+码朝外贴在外箱表面，不要遮挡文字及条码信息
+请勿覆盖
+Order #713142256
+SKU: 1201A256 116
+Size: 7
+Tracking Code: c2521d8ae79c0f7d
+2024-01-13 19:21:15.213 | WARNING  | model.openai_model:make_request:41 - Rate limit reached. Waiting for 60 seconds before retrying.
