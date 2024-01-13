@@ -8,12 +8,6 @@ from model import GLMModel, OpenAIModel
 from translator import PDFTranslator
 
 
-# def translate_pdf(model_type, openai_api_key, file_format, book, openai_model):
-#     # Additional logic to validate parameters if needed
-#
-#     translator = Translator(model_type, openai_api_key, file_format, book, openai_model)
-#     translator.translate_pdf()
-
 def translate_pdf(model_type, openai_api_key, file_format, book, openai_model):
     try:
         # Load configuration
@@ -37,9 +31,9 @@ def translate_pdf(model_type, openai_api_key, file_format, book, openai_model):
 
         # Instantiate PDFTranslator and call translate_pdf()
         translator = PDFTranslator(model)
-        translator.translate_pdf(pdf_file_path, file_format)
+        output_file_path = translator.translate_pdf(pdf_file_path, file_format)
 
-        return True
+        return output_file_path
 
     except Exception as e:
         # Handle exceptions and log or raise accordingly
