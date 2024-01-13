@@ -8,7 +8,7 @@ from model import GLMModel, OpenAIModel
 from translator import PDFTranslator
 
 
-def translate_pdf(model_type, openai_api_key, file_format, book, openai_model):
+def translate_pdf(model_type, openai_api_key, file_format, book, openai_model, target_language, output_file_path, pages):
     try:
         # Load configuration
         config_loader = ConfigLoader('config.yaml')
@@ -31,9 +31,7 @@ def translate_pdf(model_type, openai_api_key, file_format, book, openai_model):
 
         # Instantiate PDFTranslator and call translate_pdf()
         translator = PDFTranslator(model)
-        output_file_path = translator.translate_pdf(pdf_file_path, file_format)
-
-        return output_file_path
+        translator.translate_pdf(pdf_file_path, file_format, target_language, output_file_path, pages)
 
     except Exception as e:
         # Handle exceptions and log or raise accordingly

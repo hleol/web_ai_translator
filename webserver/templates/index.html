@@ -16,6 +16,46 @@
             </div>
         {% endif %}
         <div class="row">
+            <!-- Settings form -->
+            <form class="col s12" method="post">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="model_type" type="text" class="validate" name="model_type" value="OpenAIModel">
+                        <label for="model_type">Model Type</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="openai_api_key" type="text" class="validate" name="openai_api_key" value="your_default_key">
+                        <label for="openai_api_key">OpenAI API Key</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="file_format" type="text" class="validate" name="file_format" value="pdf">
+                        <label for="file_format">File Format</label>
+                    </div>
+<!--                    <div class="input-field col s6">-->
+<!--                        <input id="book" type="text" class="validate" name="book" value="you file here">-->
+<!--                        <label for="book">Book</label>-->
+<!--                    </div>-->
+                    <div class="input-field col s6">
+                        <input id="openai_model" type="text" class="validate" name="openai_model" value="gpt-3.5-turbo">
+                        <label for="openai_model">OpenAI Model</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="target_language" type="text" class="validate" name="target_language" value="中文">
+                        <label for="target_language">Target Language</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="output_file_path" type="text" class="validate" name="output_file_path" value="Your target file path">
+                        <label for="output_file_path">Output File Path</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="pages" type="text" class="validate" name="pages" value="1">
+                        <label for="pages">Pages</label>
+                    </div>
+                    <!-- Add more input fields for other parameters -->
+                </div>
+            </form>
+
+            <!-- File upload form -->
             <form class="col s12" method="post" enctype="multipart/form-data">
                 <div class="file-field input-field">
                     <div class="btn teal">
@@ -44,4 +84,3 @@
     </script>
 </body>
 </html>
-
