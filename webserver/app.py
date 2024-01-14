@@ -1,9 +1,10 @@
 # web_server/app.py
 import os
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, get_flashed_messages
 from ai_translator.main import translate_pdf # Update the import path based on your project structure
 
 app = Flask(__name__)
+app.secret_key = 'my-secret-key-random'
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -35,7 +36,8 @@ def index():
 
         try:
             output_file = translate_pdf(model_type, openai_api_key, file_format, file, openai_model, target_language, output_file_path, pages)
-            return render_template('index.html', message=f'File {output_file} uploaded and translated successfully')
+            messages = get_flashed_messages()
+            return render_template('index.html', message=messages + f'File {output_file} uploaded and translated successfully')
         except Exception as e:
             return render_template('index.html', message=f'Error: {str(e)}')
 
